@@ -1,0 +1,46 @@
+<form [formGroup]="usuario" (submit)="agregarEditar()">
+
+  <div class="mb-3">
+    <label for="Capacidad" class="form-label">Capacidad</label>
+    <input type="number" class="form-control" id="Capacidad" formControlName="capacidad">
+    <!-- <div  class="form-text">We'll never share your email with anyone else.</div> -->
+  </div>
+  <div class="mb-3">
+    <label for="Entrenador" class="form-label">Entrenador</label>
+    <input type="text" class="form-control" id="Entrenador" formControlName="entrenador">
+    <!-- <div  class="form-text">We'll never share your email with anyone else.</div> -->
+  </div>
+  <div class="mb-3">
+    <label for="estadio" class="form-label">estadio</label>
+    <input type="text" class="form-control" id="estadio" formControlName="estadio">
+    <!-- <div  class="form-text">We'll never share your email with anyone else.</div> -->
+  </div>
+  <div class="mb-3">
+    <label for="fundacion" class="form-label">fundacion</label>
+    <input type="date" class="form-control" id="fundacion" formControlName="fundacion">
+    <!-- <div  class="form-text">We'll never share your email with anyone else.</div> -->
+  </div>
+  <div class="mb-3">
+    <label for="nacionalidad" class="form-label">nacionalidad</label>
+    <input type="text" class="form-control" id="nacionalidad" formControlName="nacionalidad">
+    <!-- <div  class="form-text">We'll never share your email with anyone else.</div> -->
+  </div>
+  <div class="mb-3">
+    <label for="nombre" class="form-label">nombre</label>
+    <input type="text" class="form-control" id="nombre" formControlName="nombre">
+    <!-- <div  class="form-text">We'll never share your email with anyone else.</div> -->
+  </div>
+  <div class="mb-3">
+    <label for="sitioweb" class="form-label">sitio web</label>
+    <input type="text" class="form-control" id="sitioweb" formControlName="sitioWeb">
+    <!-- <div  class="form-text">We'll never share your email with anyone else.</div> -->
+  </div>
+  <div class="mb-3">
+    <label for="valor" class="form-label">valor</label>
+    <input type="number" class="form-control" id="valor" formControlName="valor">
+    <!-- <div  class="form-text">We'll never share your email with anyone else.</div> -->
+  </div>
+
+  <button type="submit" class="btn btn-danger " (click)="emmitEvent()">cancelar</button>
+  <button type="submit" class="btn btn-primary ml-2">Agregar</button>
+</form>
